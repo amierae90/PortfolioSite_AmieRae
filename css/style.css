@@ -1,4 +1,6 @@
-
+img {
+  width: 100%;
+}
 
 body {
   background-color: #1a0c61;
@@ -77,6 +79,7 @@ transition: 0.2s opacity;
 .button.contact:active {
   background-color: #e8c253;
   color: #000000;
+}
   .button {
     display: inline-block;
     /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
