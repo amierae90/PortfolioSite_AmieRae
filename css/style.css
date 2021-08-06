@@ -7,22 +7,30 @@ img {
   margin: 0 auto;
 }
 
-
 header {
-
   text-align: center;
-  background-color: #ff44c4;
-
+  background-color: #1a0c61;
   padding: 10px 0;
-  position: fixed;
-  box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+  position: relative;
+  box-shadow: 0px 2px 5px 0px rgba(50, 50, 50, 0.75);
   width: 100%
 }
 
 body {
-  background-color: #1a0c61;
+  background-color: #white;
   font-family: 'Dosis', sans-serif;
+  color: black;
+}
+
+
+
+footer {
+  text-align: center;
+  background-color: #1a0c61;
   color: white;
+  padding: 10px 0;
+  position: relative;
+  width: 100%
 }
 
 h1 {
@@ -31,12 +39,14 @@ h1 {
 
 h2 {
   font-variant: small-caps;
+  padding-top: 10px 0;
 }
 
 a {
   color: #e8c253;
   text-decoration: none;
   /* No underlining */
+  padding: 10px 10px;
 }
 
 a:visited {
@@ -50,7 +60,7 @@ a:visited {
 
 a:hover,
 a:focus {
-  color: #e8b253;
+  color: #ffffff;
   text-decoration: underline;
   /* Underlining when hovering over a link */
 }
@@ -95,6 +105,7 @@ a:active {
   background-color: transparent;
   color: #e8c253;
   text-transform: uppercase;
+  font-weight: 600;
   border: 2px solid #e8c253;
 }
 
@@ -108,29 +119,40 @@ a:active {
   color: #000000;
 }
 
-.button {
-  display: inline-block;
-  /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
-  background-color: #e8c253;
+a.resume {
+  margin: 0 auto background-color: transparent;
   color: #000000;
-  /* needed to override the default link color */
-  font-weight: 400;
+  text-transform: uppercase;
+  font-weight: 600;
   padding: 10px;
   border-radius: 3px;
-  border-bottom: 2px solid #994c30;
+  border-bottom: 2px solid #e8c253;
   /* width of the border, type, color */
   transition: 0.2s opacity;
+  border: 2px solid #1a0c61;
+}
+
+a.resume:hover {
+  background-color: #e8c253;
+  color: #000000;
+  text-decoration: none;
+}
+
+a.resume:active {
+  background-color: #1a0c61;
+  color: #000000;
 }
 
 /* Layout styling */
 .container {
-    max-width: 1200px;
+  max-width: 1200px;
   padding: 0 15px;
+  padding-bottom: 25px;
+  margin: 0 auto
 }
 
-#contact{
-  display: inline-block;
-  max-width: 250px
+#contact {
+  background-color: #1a0c61 padding: 20px 0;
 }
 
 .row {
@@ -147,7 +169,6 @@ a:active {
   text-align: center;
   /* Centers text */
 }
-}
 
 #hero h2 {
   text-align: center;
@@ -161,7 +182,11 @@ a:active {
 
 .logo {
   max-width: 250px;
-  margin: 5px
+  margin: 15px
+}
+
+.me {
+  max-width: 600px
 }
 
 nav>ul {
@@ -174,18 +199,29 @@ nav>ul>li {
 }
 
 nav>ul>li>a {
-  padding: 15px 15px;
+  padding: 30px 15px;
   text-transform: uppercase;
   font-weight: 700;
   color: #4a4a4a;
+  display: inline-block;
 }
 
 #hero {
-  background-color: #ffe4c4;
+  background-color: #white;
   padding: 20px 0;
   display: inline-block;
   width: 100%;
 }
-main {
-  padding-top: 300px;
+
+#about {
+  background-color: #white;
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
+}
+
+.social {
+  display: inline-block;
+  padding: 0;
+  margin: 0 auto;
 }
