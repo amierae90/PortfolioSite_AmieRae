@@ -190,21 +190,24 @@ a.resume:active {
   display: block;
 }
 
-#about-page h3 {
-  margin-top: 0;
-}
-
-#about-page ul>li {
-  list-style-type: none;
-}
-
-#about-page p {
-  padding: 25px
-}
 
 #about-page h1 {
   border-bottom: 1px solid #4a4a4a;
 }
+#about-page h3 {
+  margin-top: 0;
+  text-align: center;
+}
+
+#about-page ul>li {
+  list-style-type: none;
+  text-align: center;
+}
+
+#about-page p {
+  padding-top: 5px
+}
+
 
 .logo {
   max-width: 250px;
