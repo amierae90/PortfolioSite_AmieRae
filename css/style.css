@@ -197,6 +197,7 @@ a.resume:active {
 #about-page h3 {
   margin-top: 0;
   text-align: center;
+  text-decoration: underline;
 }
 
 #about-page ul>li {
