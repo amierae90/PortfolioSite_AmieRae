@@ -17,7 +17,7 @@ header {
 }
 
 body {
-  background-color: #white;
+  background-color: white;
   font-family: 'Dosis', sans-serif;
   color: black;
 }
@@ -50,10 +50,10 @@ a {
 a:visited {
   /* visited link */
   color: #e8c253;
+}
 
-  * {
-    box-sizing: border-box;
-  }
+* {
+  box-sizing: border-box;
 }
 
 a:hover,
@@ -81,6 +81,7 @@ a:active {
   /* width of the border, type, color */
   transition: 0.2s;
   opacity;
+  1
 }
 
 .button:hover {
@@ -190,10 +191,10 @@ a.resume:active {
   display: block;
 }
 
-
 #about-page h1 {
   border-bottom: 1px solid #4a4a4a;
 }
+
 #about-page h3 {
   margin-top: 0;
   text-align: center;
@@ -208,7 +209,6 @@ a.resume:active {
 #about-page p {
   padding-top: 5px
 }
-
 
 .logo {
   max-width: 250px;
@@ -233,7 +233,7 @@ nav>ul>li>a {
 }
 
 #hero {
-  background-color: #white;
+  background-color: white;
   padding: 20px 0;
   display: inline-block;
   width: 100%;
@@ -252,6 +252,10 @@ nav>ul>li>a {
   margin: 0 auto;
 }
 
+.col-sm-12 {
+  100%
+}
+
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
@@ -260,89 +264,84 @@ Medium devices (640px and larger)
     width: 50%;
   }
 
-  .col-lg-5 {
-    width: 41.66%;
-  }
-
   .container {
     max-width: 1200px;
     text-align: center;
   }
-}
 
-.col-lg-7 {
-  width: 58.33%;
-}
+  [class*="col-"] {
+    float: left;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%
+  }
 
-[class*="col-"] {
-  float: left;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-/* ==============================
+  /* ==============================
 Large devices (1024px or larger)
 ================================= */
-@media only screen and (min-width: 1024px) {}
+  @media only screen and (min-width: 1024px) {}
 
-/* ==============================
-X-large devices (1440px or larger)
-================================= */
-@media only screen and (min-width: 1440px) {}
+  .col-lg-5 {
+    width: 41.66%;
+  }
 
-/* ==============================
+  .col-lg-7 {
+    width: 58.33%;
+  }
+
+  /* ==============================
   ANIMATION
   ================================= */
-@keyframes color-change {
-  0% {
-    fill: #edc655;
+  @keyframes color-change {
+    0% {
+      fill: #edc655;
+    }
+
+    50% {
+      fill: #fcffad;
+    }
+
+    100% {
+      fill: #f76414;
+    }
   }
 
-  50% {
-    fill: #fcffad;
+  @keyframes cloud-move {
+    from {
+      transform: translate(0, 50px);
+    }
+
+    to {
+      transform: translate(200px, 50px);
+    }
   }
 
-  100% {
-    fill: #f76414;
-  }
-}
-
-@keyframes cloud-move {
-  from {
-    transform: translate(0, 50px);
+  .cloud-front {
+    animation-duration: 30s;
+    animation-name: cloud-move;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
   }
 
-  to {
-    transform: translate(200px, 50px);
-  }
-}
+  @keyframes cloud-move-reverse {
+    from {
+      transform: translate(400px, 48px);
+    }
 
-.cloud-front {
-  animation-duration: 30s;
-  animation-name: cloud-move;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-timing-function: linear;
-}
-
-@keyframes cloud-move-reverse {
-  from {
-    transform: translate(400px, 48px);
+    to {
+      transform: translate(360px, 48px);
+    }
   }
 
-  to {
-    transform: translate(360px, 48px);
+  .cloud-back {
+    animation: 34s cloud-move-reverse infinite alternate linear;
   }
-}
 
-.cloud-back {
-  animation: 34s cloud-move-reverse infinite alternate linear;
-}
-
-.sun {
-  animation-duration: 4s;
-  animation-name: color-change;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-timing-function: linear;
-}
+  .sun {
+    animation-duration: 4s;
+    animation-name: color-change;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+  }
