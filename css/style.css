@@ -79,8 +79,7 @@ a:active {
   border-bottom: 2px solid #e8c253;
   /* width of the border, type, color */
   transition: 0.2s;
-  opacity;
-  1
+
 }
 
 .button:hover {
@@ -192,6 +191,7 @@ a.resume:active {
 
 #about-page h1 {
   border-bottom: 1px solid #4a4a4a;
+  text-align: center
 }
 
 #about-page h3 {
@@ -206,7 +206,9 @@ a.resume:active {
 }
 
 #about-page p {
+  text-align: left;
   padding-top: 5px
+
 }
 
 .logo {
