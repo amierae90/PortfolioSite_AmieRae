@@ -339,19 +339,19 @@ Large devices (1024px or larger)
   }
 
   .logo {
-  max-width: 250px
+    max-width: 250px
   }
 
   nav>ul>li {
-  display: inline-block;
+    display: inline-block;
   }
 
   .navtoggle li:not(:last-child) {
-  display: inline-block;
+    display: inline-block;
   }
 
   .navtoggle li:last-child {
-  display: none;
+    display: none;
   }
 
   /* ==============================
